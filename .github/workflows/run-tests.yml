@@ -1,7 +1,8 @@
 name: run-tests
-# Trigger the workflow on push or pull request
-on:
-  - push
-  
+
+on: push
+  jobs:
+    runs-on: ubuntu-latest  
       steps:
+            - uses: actions/checkout@v2
             - run: make lint
