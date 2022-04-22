@@ -1,0 +1,7 @@
+name: GitHub Actions
+# Trigger the workflow on push or pull request
+on:
+  - push
+  
+      steps:
+            - run: make lint
