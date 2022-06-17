@@ -5,4 +5,6 @@
 
 [![run-tests](https://github.com/Monorox123/frontend-project-lvl1/workflows/run-tests/badge.svg)](https://github.com/Monorox123/frontend-project-lvl1/actions/workflows/run-tests.yml)  
 Игра "brain-even"
-<a href="https://asciinema.org/a/P0GlIbqlOCgZqleZeEX2y8Tpc" target="_blank"><img src="https://asciinema.org/a/P0GlIbqlOCgZqleZeEX2y8Tpc.svg" /></a>
+<a href="https://asciinema.org/a/P0GlIbqlOCgZqleZeEX2y8Tpc" target="_blank"><img src="https://asciinema.org/a/P0GlIbqlOCgZqleZeEX2y8Tpc.svg" /></a>  
+Игра "brain-calc"  
+<a href="https://asciinema.org/a/502380" target="_blank"><img src="https://asciinema.org/a/502380.svg" /></a>  
