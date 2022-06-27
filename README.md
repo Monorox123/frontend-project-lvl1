@@ -8,3 +8,5 @@
 <a href="https://asciinema.org/a/P0GlIbqlOCgZqleZeEX2y8Tpc" target="_blank"><img src="https://asciinema.org/a/P0GlIbqlOCgZqleZeEX2y8Tpc.svg" /></a>  
 Игра "brain-calc"  
 <a href="https://asciinema.org/a/502380" target="_blank"><img src="https://asciinema.org/a/502380.svg" /></a>  
+Игра "brain-gcd"  
+<a href="https://asciinema.org/a/504580" target="_blank"><img src="https://asciinema.org/a/504580.svg" /></a> 
