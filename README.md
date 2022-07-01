@@ -11,4 +11,6 @@
 Игра "brain-gcd"  
 <a href="https://asciinema.org/a/504580" target="_blank"><img src="https://asciinema.org/a/504580.svg" /></a>  
 Игра "brain-progression"  
-<a href="https://asciinema.org/a/505229" target="_blank"><img src="https://asciinema.org/a/505229.svg" /></a> 
+<a href="https://asciinema.org/a/505229" target="_blank"><img src="https://asciinema.org/a/505229.svg" /></a>  
+Игра "brain-prime"  
+<a href="https://asciinema.org/a/505262" target="_blank"><img src="https://asciinema.org/a/505262.svg" /></a>  
