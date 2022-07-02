@@ -4,8 +4,8 @@ import getRandomNumbers from '../src/getRandomNumbers.js';
 const gameRule = 'What number is missing in the progression?';
 
 const getGameData = () => {
-    const progressionMaxLength = getRandomNumbers(5, 10); // a
-    const startProgression = getRandomNumbers(1, 10);  // b
+    const progressionMaxLength = getRandomNumbers(5, 10);
+    const startProgression = getRandomNumbers(1, 10);
     const progressionStep = getRandomNumbers(1, 10); 
     const questionElement = getRandomNumbers(1, 4);
     let progressionNextSimbol = startProgression;
