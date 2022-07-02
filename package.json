@@ -11,7 +11,7 @@
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
-    },
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,10 +24,9 @@
   "bugs": {
     "url": "https://github.com/Monorox123/frontend-project-lvl1/issues"
   },
-  "type": "module",
   "homepage": "https://github.com/Monorox123/frontend-project-lvl1#readme",
   "devDependencies": {
-    "eslint": "^8.13.0",
+    "eslint": "^8.19.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"

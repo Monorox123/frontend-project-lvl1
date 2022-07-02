@@ -1,26 +1,25 @@
-import gameWork from '../src/index.js';
-import getRandomNumbers from '../src/getRandomNumbers.js';
+import gameWork from './index.js';
+import getRandomNumbers from './getRandomNumbers.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
 const getGameData = () => {
-    const randNumOne = getRandomNumbers(1, 100); // a
-    let workrandNumOne = randNumOne;
-    const randNumTwo = getRandomNumbers(1, 100);;  // b
-    let workrandNumTwo = randNumTwo;
-    let result; // gcd
-while (workrandNumOne != workrandNumTwo) {
-  if (workrandNumOne > workrandNumTwo) {
-    workrandNumOne = workrandNumOne - workrandNumTwo;
+  const randNumOne = getRandomNumbers(1, 100);
+  let workrandNumOne = randNumOne;
+  const randNumTwo = getRandomNumbers(1, 100);
+  let workrandNumTwo = randNumTwo;
+  let result;
+  while (workrandNumOne != workrandNumTwo) {
+    if (workrandNumOne > workrandNumTwo) {
+      workrandNumOne -= workrandNumTwo;
+    } else {
+      workrandNumTwo -= workrandNumOne;
+    }
   }
-  else {
-    workrandNumTwo = workrandNumTwo - workrandNumOne;
-  }
-}
-result = workrandNumOne;
+  result = workrandNumOne;
 
-    const randomQuestion = `${randNumOne} ${randNumTwo}`;
-    const rightAnswer = String(result);
+  const randomQuestion = `${randNumOne} ${randNumTwo}`;
+  const rightAnswer = String(result);
   return [randomQuestion, rightAnswer];
 };
 
