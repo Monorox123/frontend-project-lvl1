@@ -8,8 +8,8 @@ const getGameData = () => {
   let workrandNumOne = randNumOne;
   const randNumTwo = getRandomNumbers(1, 100);
   let workrandNumTwo = randNumTwo;
-  let result;
-  while (workrandNumOne != workrandNumTwo) {
+  let result = 0;
+  while (workrandNumOne !== workrandNumTwo) {
     if (workrandNumOne > workrandNumTwo) {
       workrandNumOne -= workrandNumTwo;
     } else {

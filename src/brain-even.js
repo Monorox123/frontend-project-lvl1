@@ -5,7 +5,7 @@ export default () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  for (let counter = 1; counter <= 3; counter++) {
+  for (let counter = 1; counter <= 3; counter + 1) {
     const randomNumber = Math.floor(Math.random() * (100 - 1)) + 1;
     const result = randomNumber % 2;
     console.log(`Question: ${randomNumber}`);
