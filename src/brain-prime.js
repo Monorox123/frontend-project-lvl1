@@ -5,7 +5,7 @@ const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 const getGameData = () => {
   const someNumber = getRandomNumbers(1, 20);
   let flag = true;
-  for (let i = 2; i < someNumber; i + 1) {
+  for (let i = 2; i < someNumber; i += 1) {
     if (someNumber % i === 0) {
       flag = false;
       break;
