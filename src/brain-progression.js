@@ -16,11 +16,9 @@ const getGameData = () => {
   }
   const result = progressionMass[questionElement];
   progressionMass[questionElement] = '..';
-  const question = String(progressionMass);
-  const re = /,/g;
-  const newQuestion = question.replace(re, ' ');
+  const question = progressionMass.join(' ');
 
-  const randomQuestion = newQuestion;
+  const randomQuestion = question;
   const rightAnswer = String(result);
   return [randomQuestion, rightAnswer];
 };

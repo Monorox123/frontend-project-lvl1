@@ -3,26 +3,20 @@ import getRandomNumbers from './getRandomNumbers.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
-const getGameData = () => {
-  const randNumOne = getRandomNumbers(1, 100);
-  let workrandNumOne = randNumOne;
-  const randNumTwo = getRandomNumbers(1, 100);
-  let workrandNumTwo = randNumTwo;
-  let result = 0;
-  while (workrandNumOne !== workrandNumTwo) {
-    if (workrandNumOne > workrandNumTwo) {
-      workrandNumOne -= workrandNumTwo;
-    } else {
-      workrandNumTwo -= workrandNumOne;
-    }
+const findGCD = (num1, num2) => {
+  if (num2 === 0) {
+    return num1;
   }
-  result = workrandNumOne;
-
-  const randomQuestion = `${randNumOne} ${randNumTwo}`;
-  const rightAnswer = String(result);
-  return [randomQuestion, rightAnswer];
+  return findGCD(num2, num1 % num2);
 };
 
+const getGameData = () => {
+  const randNumOne = getRandomNumbers(1, 100);
+  const randNumTwo = getRandomNumbers(1, 100);
+  const randomQuestion = `${randNumOne} ${randNumTwo}`;
+  const rightAnswer = String(findGCD(randNumOne, randNumTwo));
+  return [randomQuestion, rightAnswer];
+};
 const brainGcd = () => gameWork(gameRule, getGameData);
 
 export default brainGcd;
