@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import brainCalc from '../src/brain-calc.js';
+import startBrainCalc from '../src/brain-calc.js';
 
-brainCalc();
+startBrainCalc();

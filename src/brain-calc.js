@@ -32,6 +32,6 @@ const getGameData = () => {
   return [randomQuestion, rightAnswer];
 };
 
-const brainCalc = () => gameWork(gameRule, getGameData);
+const startBrainCalc = () => gameWork(gameRule, getGameData);
 
-export default brainCalc;
+export default startBrainCalc;

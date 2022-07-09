@@ -17,6 +17,6 @@ const getGameData = () => {
   const rightAnswer = String(findGCD(randNumOne, randNumTwo));
   return [randomQuestion, rightAnswer];
 };
-const brainGcd = () => gameWork(gameRule, getGameData);
+const startBrainGcd = () => gameWork(gameRule, getGameData);
 
-export default brainGcd;
+export default startBrainGcd;

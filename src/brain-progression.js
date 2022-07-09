@@ -23,6 +23,6 @@ const getGameData = () => {
   return [randomQuestion, rightAnswer];
 };
 
-const brainProgression = () => gameWork(gameRule, getGameData);
+const startBrainProgression = () => gameWork(gameRule, getGameData);
 
-export default brainProgression;
+export default startBrainProgression;
