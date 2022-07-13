@@ -1,13 +1,13 @@
-import gameWork from './index.js';
-import getRandomNumbers from './getRandomNumbers.js';
+import gameWork from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const gameRule = 'What number is missing in the progression?';
 
 const getGameData = () => {
-  const progressionMaxLength = getRandomNumbers(5, 10);
-  const startProgression = getRandomNumbers(1, 10);
-  const progressionStep = getRandomNumbers(1, 10);
-  const questionElement = getRandomNumbers(1, 4);
+  const progressionMaxLength = getRandomNumber(5, 10);
+  const startProgression = getRandomNumber(1, 10);
+  const progressionStep = getRandomNumber(1, 10);
+  const questionElement = getRandomNumber(1, 4);
   let progressionNextSimbol = startProgression;
   const progressionMass = [startProgression];
   while (progressionMass.length - 1 !== progressionMaxLength) {

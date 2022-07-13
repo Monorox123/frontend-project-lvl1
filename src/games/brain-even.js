@@ -1,5 +1,5 @@
-import gameWork from './index.js';
-import getRandomNumbers from './getRandomNumbers.js';
+import gameWork from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -11,7 +11,7 @@ const isEven = (number) => {
 };
 
 const getGameData = () => {
-  const randomNumber = getRandomNumbers(0, 20);
+  const randomNumber = getRandomNumber(0, 20);
   const gameQuestion = randomNumber.toString();
   const gameAnswer = isEven(gameQuestion) ? 'yes' : 'no';
   return [gameQuestion, gameAnswer];
