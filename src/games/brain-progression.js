@@ -4,19 +4,19 @@ import getRandomNumber from '../getRandomNumber.js';
 const gameRule = 'What number is missing in the progression?';
 
 const getGameData = () => {
-  const progressionMaxLength = getRandomNumber(5, 10);
-  const startProgression = getRandomNumber(1, 10);
-  const progressionStep = getRandomNumber(1, 10);
+  const numbersMaxLength = getRandomNumber(5, 10);
+  const startNumber = getRandomNumber(1, 10);
+  const step = getRandomNumber(1, 10);
   const questionElement = getRandomNumber(1, 4);
-  let progressionNextSimbol = startProgression;
-  const progressionMass = [startProgression];
-  while (progressionMass.length - 1 !== progressionMaxLength) {
-    progressionNextSimbol += progressionStep;
-    progressionMass.push(progressionNextSimbol);
+  let nextNumber = startNumber;
+  const numbers = [startNumber];
+  while (numbers.length - 1 !== numbersMaxLength) {
+    nextNumber += step;
+    numbers.push(nextNumber);
   }
-  const result = progressionMass[questionElement];
-  progressionMass[questionElement] = '..';
-  const question = progressionMass.join(' ');
+  const result = numbers[questionElement];
+  numbers[questionElement] = '..';
+  const question = numbers.join(' ');
 
   const randomQuestion = question;
   const rightAnswer = String(result);

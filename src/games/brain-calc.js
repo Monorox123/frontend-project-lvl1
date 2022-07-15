@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import gameWork from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
@@ -16,19 +17,19 @@ const calculate = (num1, num2, operators) => {
       result = num1 * num2;
       break;
     default:
-      return null;
+      throw new Error(`Unknown operator: ${operators}`);
   }
   return result;
 };
 
 const getGameData = () => {
   const mathOperators = ['+', '-', '*'];
-  const randNumOne = getRandomNumber(1, 10);
-  const randNumTwo = getRandomNumber(1, 10);
-  const randOperator = getRandomNumber(0, mathOperators.length - 1);
+  const randomeNumberOne = getRandomNumber(1, 10);
+  const randomeNumberTwo = getRandomNumber(1, 10);
+  const randomeOperator = getRandomNumber(0, mathOperators.length - 1);
 
-  const randomQuestion = `${randNumOne} ${mathOperators[randOperator]} ${randNumTwo}`;
-  const rightAnswer = String(calculate(randNumOne, randNumTwo, mathOperators[randOperator]));
+  const randomQuestion = `${randomeNumberOne} ${mathOperators[randomeOperator]} ${randomeNumberTwo}`;
+  const rightAnswer = String(calculate(randomeNumberOne, randomeNumberTwo, mathOperators[randomeOperator]));
   return [randomQuestion, rightAnswer];
 };
 
